@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IELTS Speaking Guide - Band 5.0+</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf8f5;--card:#fff;--text:#2c2c2c;--muted:#6b6b6b;--accent:#c0392b;--accent2:#e74c3c;--accent-light:#fdecea;--blue:#2980b9;--blue-light:#ebf5fb;--green:#27ae60;--green-light:#eafaf1;--orange:#f39c12;--orange-light:#fef9e7;--purple:#8e44ad;--purple-light:#f5eef8;--teal:#16a085;--teal-light:#e8f8f5;--border:#e8e4df;--shadow:0 2px 20px rgba(0,0,0,.06)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Source Sans 3',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;font-size:16px}
+.hero{background:linear-gradient(135deg,#c0392b 0%,#e74c3c 40%,#f39c12 100%);color:#fff;padding:50px 24px 40px;text-align:center;position:relative;overflow:hidden}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(26px,5vw,42px);font-weight:900;margin-bottom:6px}
+.hero p{font-size:17px;opacity:.9;font-weight:300}
+.hero .badge{display:inline-block;background:rgba(255,255,255,.2);padding:4px 16px;border-radius:20px;font-size:13px;margin-top:10px;backdrop-filter:blur(4px)}
+.hero .stats{display:flex;justify-content:center;gap:24px;margin-top:16px;font-size:13px;opacity:.85;flex-wrap:wrap}
+.hero .stats span{background:rgba(255,255,255,.15);padding:3px 12px;border-radius:12px}
+.container{max-width:920px;margin:0 auto;padding:0 20px}
+.nav-wrap{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px solid var(--border);padding:0 20px}
+.nav{max-width:920px;margin:0 auto;display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav button{flex-shrink:0;padding:13px 16px;border:none;background:none;font-family:'Source Sans 3',sans-serif;font-size:13px;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;transition:all .2s;white-space:nowrap}
+.nav button:hover{color:var(--text)}
+.nav button.active{color:var(--accent);border-bottom-color:var(--accent)}
+.section{display:none;padding:28px 0 60px}
+.section.active{display:block}
+.section-title{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;margin-bottom:6px}
+.section-subtitle{color:var(--muted);margin-bottom:24px;font-size:15px}
+.card{background:var(--card);border-radius:12px;padding:24px;margin-bottom:18px;box-shadow:var(--shadow);border:1px solid var(--border)}
+.card-header{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.card-icon{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.card-icon.red{background:var(--accent-light)}.card-icon.blue{background:var(--blue-light)}.card-icon.green{background:var(--green-light)}.card-icon.orange{background:var(--orange-light)}.card-icon.purple{background:var(--purple-light)}.card-icon.teal{background:var(--teal-light)}
+.card h3{font-size:17px;font-weight:700}
+.qa-block{margin-bottom:20px;border-left:3px solid var(--accent);padding-left:14px}
+.qa-block:last-child{margin-bottom:0}
+.question{font-weight:700;color:var(--accent);margin-bottom:4px;font-size:14px}
+.answer{color:var(--text);font-size:14.5px;line-height:1.8}
+.vocab{display:inline;background:linear-gradient(to bottom,transparent 60%,#fdecea 60%);font-weight:600}
+.alert{padding:16px 20px;border-radius:10px;margin-bottom:18px;font-size:14px}
+.alert.warning{background:#fff3cd;border:1px solid #ffc107}
+.alert.info{background:var(--blue-light);border:1px solid #bee5eb}
+.alert.success{background:var(--green-light);border:1px solid #c3e6cb}
+.alert strong{display:block;margin-bottom:3px}
+.coll{margin-bottom:10px}
+.coll-h{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 18px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:15px;transition:all .2s;box-shadow:var(--shadow)}
+.coll-h:hover{border-color:var(--accent)}
+.coll-h .arr{transition:transform .3s;font-size:13px;color:var(--muted)}
+.coll.open .arr{transform:rotate(180deg)}
+.coll-b{display:none;padding:18px;background:var(--card);border:1px solid var(--border);border-top:none;border-radius:0 0 10px 10px;margin-top:-8px}
+.coll.open .coll-b{display:block}
+.coll.open .coll-h{border-radius:10px 10px 0 0;border-color:var(--accent);color:var(--accent)}
+.tip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.tip-card{background:var(--card);border-radius:10px;padding:16px;border:1px solid var(--border);box-shadow:var(--shadow)}
+.tip-card h4{font-size:14px;margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.tip-card p{font-size:13px;color:var(--muted);line-height:1.6}
+.cue-card{background:#f8f9fa;padding:16px;border-radius:8px;margin-bottom:14px;border-left:4px solid var(--blue);font-size:14.5px}
+.cue-card strong{display:block;margin-bottom:4px;font-size:15px}
+.notes-box{background:#f8f9fa;border:1px dashed var(--border);border-radius:10px;padding:16px;margin:12px 0;font-family:'JetBrains Mono',monospace;font-size:13px;line-height:2}
+.notes-box .label{font-family:'Source Sans 3',sans-serif;font-weight:700;color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;display:block}
+.phrase-box{display:flex;gap:10px;align-items:flex-start;padding:10px 14px;border-radius:8px;margin-bottom:8px;font-size:14px}
+.phrase-box strong{display:block;margin-bottom:2px}
+.phrase-box span{font-size:13px;color:var(--muted)}
+.q-grid{display:grid;grid-template-columns:1fr;gap:8px;font-size:14px}
+.q-item{padding:10px 14px;background:#f8f9fa;border-radius:6px;display:flex;gap:8px;align-items:flex-start}
+.q-item .tag{flex-shrink:0;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;text-transform:uppercase}
+.tag.what{background:#dbeafe;color:#1e40af}.tag.where{background:#dcfce7;color:#166534}.tag.how{background:#fef3c7;color:#92400e}.tag.do{background:#f3e8ff;color:#7c3aed}.tag.why{background:#fce7f3;color:#9d174d}.tag.would{background:#e0e7ff;color:#3730a3}
+.fix-step{display:flex;gap:14px;margin-bottom:18px;align-items:flex-start}
+.fix-num{width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px;flex-shrink:0}
+.fix-content h4{font-size:15px;margin-bottom:3px}
+.fix-content p{font-size:13px;color:var(--muted);line-height:1.6}
+@media(max-width:600px){.hero{padding:35px 18px 30px}.card{padding:18px}.tip-grid{grid-template-columns:1fr}.nav button{padding:11px 12px;font-size:12px}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>IELTS Speaking Guide</h1>
+  <p>Tài liệu ôn tập toàn diện — Mục tiêu Band 5.0+</p>
+  <div class="badge">🎓 IT - Kỹ thuật Phần mềm — ĐH Đà Lạt</div>
+  <div class="stats">
+    <span>📝 10 Topics Part 1</span>
+    <span>🎯 8 Cue Cards Part 2</span>
+    <span>💬 32 Câu Part 3</span>
+  </div>
+</div>
+
+<div class="nav-wrap">
+  <div class="nav" id="nav">
+    <button class="active" onclick="show('overview')">Tổng quan</button>
+    <button onclick="show('part1')">Part 1</button>
+    <button onclick="show('part2')">Part 2</button>
+    <button onclick="show('part3')">Part 3</button>
+    <button onclick="show('phrases')">Cụm từ hay</button>
+    <button onclick="show('strategies')">Chiến lược</button>
+    <button onclick="show('listening')">Nghe & Hiểu</button>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- ============ OVERVIEW ============ -->
+<div class="section active" id="overview">
+  <h2 class="section-title">Tổng quan IELTS Speaking</h2>
+  <p class="section-subtitle">Cấu trúc bài thi, examiner's script, và tất cả topics cần ôn</p>
+
+  <div class="card">
+    <div class="card-header"><div class="card-icon red">📋</div><h3>Cấu trúc bài thi</h3></div>
+    <div style="display:grid;gap:10px;">
+      <div style="background:var(--blue-light);padding:14px 16px;border-radius:8px;font-size:14px;">
+        <strong style="color:var(--blue)">Part 1 — Interview (4–5 phút)</strong><br>
+        Hỏi về bản thân: 1 topic bắt buộc (Hometown/Study/Work) + 2 topic phụ từ danh sách. Trả lời ngắn 2–4 câu.
+      </div>
+      <div style="background:var(--green-light);padding:14px 16px;border-radius:8px;font-size:14px;">
+        <strong style="color:var(--green)">Part 2 — Long Turn (3–4 phút)</strong><br>
+        Nhận cue card + 1 phút ghi chú → Nói 1–2 phút liên tục. Nên nói "như đang kể chuyện." Cần 200+ từ.
+      </div>
+      <div style="background:var(--purple-light);padding:14px 16px;border-radius:8px;font-size:14px;">
+        <strong style="color:var(--purple)">Part 3 — Discussion (4–5 phút)</strong><br>
+        Câu hỏi mở rộng từ Part 2. Cần: Describe, Compare, Evaluate, Agree/Disagree, Predict, Give reasons. Kết thúc: "Thank you very much. This is the end of the Speaking test."
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><div class="card-icon orange">🎤</div><h3>Examiner's Script — Mở đầu Part 1</h3></div>
+    <div style="background:#f8f9fa;padding:16px;border-radius:8px;font-size:14px;line-height:2;">
+      "Good morning/afternoon/evening."<br>
+      "I'm/My name is ..." <em style="color:var(--muted)">[tên giám khảo]</em><br>
+      "Can you tell me your full name, please?" → <strong>My full name is [họ và tên]</strong><br>
+      "Thank you. And what shall I call you?" → <strong>Please call me [tên]</strong><br>
+      "Can you tell me where you're from?" → <strong>I'm from Da Lat.</strong><br>
+      "Can I see your identification, please?" → <em style="color:var(--muted)">Đưa giấy báo dự thi + CCCD/VNID xác thực cấp độ 2</em><br>
+      "Now, in this first part, I'd like to ask you some questions about yourself."
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><div class="card-icon green">📚</div><h3>Tất cả Topics cần ôn</h3></div>
+    <p style="font-size:14px;color:var(--muted);margin-bottom:12px;"><strong>Part 1 — 10 topics</strong> (GV chọn 1 bắt buộc + 2 phụ):</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;font-size:13px;">
+      <div style="background:var(--blue-light);padding:10px;border-radius:8px;text-align:center;"><strong>🏠 Hometown</strong></div>
+      <div style="background:var(--green-light);padding:10px;border-radius:8px;text-align:center;"><strong>📖 Study</strong></div>
+      <div style="background:var(--orange-light);padding:10px;border-radius:8px;text-align:center;"><strong>🏘️ Area</strong></div>
+      <div style="background:var(--purple-light);padding:10px;border-radius:8px;text-align:center;"><strong>🏡 Accommodation</strong></div>
+      <div style="background:var(--teal-light);padding:10px;border-radius:8px;text-align:center;"><strong>🎮 Free time</strong></div>
+      <div style="background:var(--accent-light);padding:10px;border-radius:8px;text-align:center;"><strong>📸 Photography</strong></div>
+      <div style="background:#fff3cd;padding:10px;border-radius:8px;text-align:center;"><strong>🛒 Shopping</strong></div>
+      <div style="background:#e8daef;padding:10px;border-radius:8px;text-align:center;"><strong>🐾 Pets</strong></div>
+      <div style="background:#d5f5e3;padding:10px;border-radius:8px;text-align:center;"><strong>🍳 Cooking</strong></div>
+      <div style="background:#fdebd0;padding:10px;border-radius:8px;text-align:center;"><strong>💎 Jewelry</strong></div>
+    </div>
+    <p style="font-size:14px;color:var(--muted);margin:16px 0 12px;"><strong>Part 2 — 8 Cue Cards</strong> (3 nhóm: Người / Nơi chốn / Sự việc):</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px;font-size:13px;">
+      <div style="background:#f0f8ff;padding:10px;border-radius:8px;">👤 Người truyền cảm hứng</div>
+      <div style="background:#f0f8ff;padding:10px;border-radius:8px;">😂 Người hài hước</div>
+      <div style="background:#f0fff0;padding:10px;border-radius:8px;">🌿 Nơi yên tĩnh</div>
+      <div style="background:#f0fff0;padding:10px;border-radius:8px;">👥 Nơi đông người</div>
+      <div style="background:#fff8f0;padding:10px;border-radius:8px;">🎁 Món quà ý nghĩa</div>
+      <div style="background:#fff8f0;padding:10px;border-radius:8px;">📰 Tin tốt nhận được</div>
+      <div style="background:#f8f0ff;padding:10px;border-radius:8px;">🎉 Sự kiện vui</div>
+      <div style="background:#f8f0ff;padding:10px;border-radius:8px;">🏆 Cuộc thi đã tham gia</div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PART 1 ============ -->
+<div class="section" id="part1">
+  <h2 class="section-title">Part 1 — Interview</h2>
+  <p class="section-subtitle">4–5 phút • 10 Topics • Trả lời 2–4 câu/câu hỏi</p>
+  <div class="alert info"><strong>💡 Công thức Band 5.0:</strong> Trả lời trực tiếp → Lý do (because) → Ví dụ hoặc mở rộng 1 câu.</div>
+
+  <div class="coll open" onclick="tog(this)"><div class="coll-h">🏠 1. Hometown <span class="arr">▼</span></div><div class="coll-b">
+    <div class="qa-block"><div class="question">What kind of place is your hometown?</div><div class="answer">Da Lat is a small city in the Central Highlands of Vietnam. It is <span class="vocab">renowned for</span> its cool weather and beautiful scenery. The city center is getting more <span class="vocab">bustling</span> because of tourism.</div></div>
+    <div class="qa-block"><div class="question">What are the most interesting things to do there?</div><div class="answer">There are loads of great things to do, <span class="vocab">such as</span> visiting the night market and trying local street food. I would <span class="vocab">strongly recommend visiting</span> some <span class="vocab">fancy</span> coffee shops. <span class="vocab">It's definitely worth visiting</span>.</div></div>
+    <div class="qa-block"><div class="question">Would you say it is a good or bad place to live?</div><div class="answer"><span class="vocab">Although</span> there are some <span class="vocab">drawbacks</span> like fewer IT jobs, I'm a <span class="vocab">massive fan of</span> the cool weather. <span class="vocab">However</span>, in the <span class="vocab">distant future</span>, I might be <span class="vocab">tempted</span> to <span class="vocab">relocate</span> for my career.</div></div>
+    <div class="qa-block"><div class="question">How do you travel around your hometown?</div><div class="answer">I generally <span class="vocab">tend to</span> travel by motorbike. It's <span class="vocab">reasonably cheap</span> and convenient. The roads can get <span class="vocab">congested</span> during <span class="vocab">rush hour</span> near the center.</div></div>
+    <div class="qa-block"><div class="question">Would you prefer to live in a bigger or smaller place?</div><div class="answer"><span class="vocab">Despite the fact that</span> I can see the <span class="vocab">pluses</span> of living here, I'll need to move for IT jobs. But <span class="vocab">as I get older</span>, I think I'll <span class="vocab">end up</span> coming back to Da Lat.</div></div>
+    <div class="qa-block"><div class="question">What kind of jobs do people do there?</div><div class="answer">There is a <span class="vocab">mixture of</span> jobs. <span class="vocab">Firstly</span>, many <span class="vocab">residents</span> <span class="vocab">are employed</span> in tourism. <span class="vocab">In addition</span>, many work in agriculture on the <span class="vocab">outskirts of</span> the city.</div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">🏘️ 2. Area where you live <span class="arr">▼</span></div><div class="coll-b">
+    <div class="qa-block"><div class="question">Do you like the area that you live in?</div><div class="answer">Yes, I quite like it. I live near my university in Da Lat, so it's very convenient. The area is quiet and surrounded by pine trees, which makes it comfortable for a student.</div></div>
+    <div class="qa-block"><div class="question">Where do you like to go in this area?</div><div class="answer">I often go to coffee shops near campus because they're great for studying. I also enjoy walking around Xuan Huong Lake in the evening when the weather is cool.</div></div>
+    <div class="qa-block"><div class="question">Do you know any famous people in your area?</div><div class="answer">To be honest, I don't know any really famous people. However, Da Lat is well-known for some local artists who are inspired by the city's beautiful landscape.</div></div>
+    <div class="qa-block"><div class="question">What are some changes in the area recently?</div><div class="answer">Many new coffee shops and hotels have been built because of growing tourism. The roads have also been improved, which is good for getting around.</div></div>
+    <div class="qa-block"><div class="question">Do you know any of your neighbours?</div><div class="answer">Yes, most of them are also university students. We sometimes help each other with small things, which is nice.</div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">🏡 3. Accommodation <span class="arr">▼</span></div><div class="coll-b">
+    <div class="qa-block"><div class="question">How long have you lived there?</div><div class="answer">I've lived in my current place for about two or three years, since I started university. It's a rented room near campus.</div></div>
+    <div class="qa-block"><div class="question">What do you like about living there?</div><div class="answer">It's close to my university and quiet, which is important for studying, especially when I have programming projects to work on late at night.</div></div>
+    <div class="qa-block"><div class="question">What sort of accommodation would you most like to live in?</div><div class="answer">I'd love a small apartment with good internet and a workspace for my computer. As a software engineer, having a comfortable place to work from home would be really important.</div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">📖 4. Study <span class="arr">▼</span></div><div class="coll-b">
+    <div class="qa-block"><div class="question">What do you study?</div><div class="answer">I study Software Engineering at Dalat University. It covers programming, web development, databases, and how to build software applications.</div></div>
+    <div class="qa-block"><div class="question">Where do you study?</div><div class="answer">At Dalat University in Da Lat city. The campus is surrounded by pine trees and the weather is always cool, so it's comfortable for studying.</div></div>
+    <div class="qa-block"><div class="question">Do you think this is a good place to study?</div><div class="answer">Yes. The quiet atmosphere helps me concentrate and the cost of living is lower than big cities. The only downside is fewer tech companies for internships.</div></div>
+    <div class="qa-block"><div class="question">Have you always wanted to study this?</div><div class="answer">Not exactly. When I was younger, I didn't know about software engineering. But once I started using computers, I became interested in how apps work.</div></div>
+    <div class="qa-block"><div class="question">What is the most interesting part of your study?</div><div class="answer">Building actual projects — writing code and seeing it become a working application. It's really satisfying to see my ideas come to life.</div></div>
+    <div class="qa-block"><div class="question">Is there anything you don't like about your study?</div><div class="answer">The workload can be heavy. Many assignments at the same time is stressful. Some subjects like advanced math are challenging too.</div></div>
+    <div class="qa-block"><div class="question">What are your study plans for the future?</div><div class="answer">After graduation, I want to find a software developer job, probably in Ho Chi Minh City. I also plan to keep improving my English.</div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">🎮 5. Free time <span class="arr">▼</span></div><div class="coll-b">
+    <div class="qa-block"><div class="question">What do you usually do in your free time?</div><div class="answer">I usually watch tech videos on YouTube or play video games to relax. Sometimes I go to coffee shops with friends. I also spend time learning new programming languages for fun.</div></div>
+    <div class="qa-block"><div class="question">Have your free-time activities changed since you were a child?</div><div class="answer">Yes, definitely. As a child, I played outside — riding bikes and playing football. Now I spend more time on my computer, either studying or doing coding projects.</div></div>
+    <div class="qa-block"><div class="question">Do you prefer spending your free time alone or with others?</div><div class="answer">It depends on my mood. Sometimes I prefer being alone for coding or reading. But I also enjoy hanging out with friends. I'd say it's about fifty-fifty.</div></div>
+    <div class="qa-block"><div class="question">Is it important to have free time every day?</div><div class="answer">Yes, very important. Without it, people feel stressed and burned out. Even 30 minutes of relaxation can make a big difference for studying.</div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">📸 6. Photography <span class="arr">▼</span></div><div class="coll-b">
+    <div class="qa-block"><div class="question">Do you like taking photos?</div><div class="answer">Yes, I enjoy it. Living in Da Lat, there are many beautiful places to photograph. I usually just use my phone camera though.</div></div>
+    <div class="qa-block"><div class="question">What do you usually take photos of?</div><div class="answer">Mostly scenery and food. Da Lat has amazing views, and I often photograph food at new restaurants — that's pretty common among young people.</div></div>
+    <div class="qa-block"><div class="question">Have you ever had your photo professionally taken?</div><div class="answer">Only for official documents like my university ID. I haven't done a proper photoshoot for fun, but maybe someday.</div></div>
+    <div class="qa-block"><div class="question">Do you prefer to take photos or be in them?</div><div class="answer">I prefer taking photos. I'm a bit shy in front of the camera. I enjoy finding good angles, especially of Da Lat's natural scenery.</div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">🛒 7. Shopping <span class="arr">▼</span></div><div class="coll-b">
+    <div class="qa-block"><div class="question">Do you enjoy shopping?</div><div class="answer">Not really. As a student, I only buy things when I need them. But I enjoy browsing online for tech gadgets and computer accessories.</div></div>
+    <div class="qa-block"><div class="question">What kinds of things do you usually buy?</div><div class="answer">Mostly daily necessities like food. Sometimes tech items like USB cables or laptop accessories. Occasionally clothes, but not often.</div></div>
+    <div class="qa-block"><div class="question">Have your shopping habits changed recently?</div><div class="answer">Yes, I shop online more now, especially on Shopee. It's convenient — I can compare prices easily and get things delivered to my door.</div></div>
+    <div class="qa-block"><div class="question">Do you prefer online or in-store shopping?</div><div class="answer">Online for most things because it saves time. But for clothes and food, I prefer physical stores because I want to see and try things first.</div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">🐾 8. Pets <span class="arr">▼</span></div><div class="coll-b">
+    <div class="qa-block"><div class="question">Do you like animals?</div><div class="answer">Yes, especially dogs and cats. In Da Lat, I often see stray cats at coffee shops, and I enjoy watching them.</div></div>
+    <div class="qa-block"><div class="question">Have you ever had a pet?</div><div class="answer">My family had a dog when I was younger. Since moving to Da Lat for university, I can't keep a pet in my rented room.</div></div>
+    <div class="qa-block"><div class="question">What kinds of pets are common in your country?</div><div class="answer">Dogs and cats are most common. Recently, smaller pets like hamsters and fish have become popular among young people too.</div></div>
+    <div class="qa-block"><div class="question">Would you like to have a pet in the future?</div><div class="answer">Yes, I'd love a cat once I have my own apartment. Cats are quiet and independent, which would suit my lifestyle as a developer.</div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">🍳 9. Cooking <span class="arr">▼</span></div><div class="coll-b">
+    <div class="qa-block"><div class="question">Do you enjoy cooking?</div><div class="answer">I don't cook often. As a student, I usually eat at the university canteen or small restaurants — it's cheap and convenient in Da Lat.</div></div>
+    <div class="qa-block"><div class="question">How often do you cook?</div><div class="answer">Maybe once or twice a week, usually on weekends when I have more time. During the week, I'm too busy with assignments.</div></div>
+    <div class="qa-block"><div class="question">What kind of food do you usually cook?</div><div class="answer">Simple dishes like fried rice, instant noodles, or eggs. Sometimes I try Vietnamese food my mom taught me, but it never tastes as good as hers.</div></div>
+    <div class="qa-block"><div class="question">Who taught you how to cook?</div><div class="answer">My mom taught me basic cooking before I left home — rice, soups, fried eggs. I'm grateful because it helps me survive as a student living alone.</div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">💎 10. Jewelry <span class="arr">▼</span></div><div class="coll-b">
+    <div class="qa-block"><div class="question">Do you often wear jewelry?</div><div class="answer">Not really. The most I'd wear is a simple watch. In the IT field, people dress simply.</div></div>
+    <div class="qa-block"><div class="question">What type of jewelry do you like?</div><div class="answer">Simple, modern designs. A nice watch or a plain bracelet. Nothing too flashy.</div></div>
+    <div class="qa-block"><div class="question">Do you usually buy jewelry?</div><div class="answer">Rarely. Sometimes I buy small pieces as gifts for family on special occasions like Tet.</div></div>
+    <div class="qa-block"><div class="question">Why do you think some people wear jewelry for a long time?</div><div class="answer">Sentimental value. A wedding ring or necklace from someone special reminds them of important moments, so they keep wearing it.</div></div>
+  </div></div>
+</div>
+
+<!-- ============ PART 2 ============ -->
+<div class="section" id="part2">
+  <h2 class="section-title">Part 2 — Long Turn</h2>
+  <p class="section-subtitle">3–4 phút • 8 Cue Cards • Nói "như đang kể chuyện" • Cần 200+ từ</p>
+
+  <div class="card">
+    <div class="card-header"><div class="card-icon red">💬</div><h3>7 Câu mở đầu Part 2 (học 2–3 câu)</h3></div>
+    <div style="font-size:14px;line-height:2.2;">
+      ✅ <strong>"I'd like to talk about..."</strong> ← dễ nhất, dùng mọi lúc<br>
+      ✅ <strong>"The one I'd like to tell you about is..."</strong><br>
+      ✅ <strong>"Let me tell you about..."</strong><br>
+      📎 "My favourite was..." | "Personally, I would have to say..." | "The one who/that stands out is..." | "I'm going to tell you about..."
+    </div>
+  </div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">👤 1. Người truyền cảm hứng <span class="arr">▼</span></div><div class="coll-b">
+    <div class="cue-card"><strong>Describe a person who inspired you to do something new.</strong>Who this person is • How you know them • What new thing you did • How this person inspired you</div>
+    <div class="notes-box"><span class="label">Keywords:</span>senior / IT club — web dev — first website — passion, patient</div>
+    <div class="answer" style="font-size:14.5px;line-height:1.9;">
+      <strong>I'd like to talk about</strong> a senior student who inspired me to learn web development. His name is Minh, the leader of our IT club at Dalat University. I met him in my first year.<br><br>
+      He organized workshops teaching us HTML, CSS, and JavaScript. He was very patient and always helped when I had questions. What impressed me was his passion — he spent hours helping students even with his own assignments.<br><br>
+      Because of him, I built my first simple website. It wasn't perfect, but I felt really proud. He showed me that with hard work, anyone can learn something new. I'm grateful because web development is now one of my favourite parts of my study.
+    </div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">😂 2. Người hài hước <span class="arr">▼</span></div><div class="coll-b">
+    <div class="cue-card"><strong>Describe a person who has a great sense of humor.</strong>Who the person is • How you know them • What they do to make people laugh • Why you think they are funny</div>
+    <div class="notes-box"><span class="label">Keywords:</span>classmate Hung — same IT class — impressions, funny stories — natural, positive</div>
+    <div class="answer" style="font-size:14.5px;line-height:1.9;">
+      <strong>Let me tell you about</strong> my classmate Hung, one of the funniest people I know. We've been in the same Software Engineering class since first year.<br><br>
+      He has a talent for telling stories in a funny way. He imitates our professors — in a friendly way — and everyone laughs. He also makes funny comments about coding, like comparing debugging to finding a needle in a haystack.<br><br>
+      He's funny because his humor is natural and he never tries too hard. He also knows when to be serious. His humor makes our stressful university life more bearable.
+    </div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">🌿 3. Nơi yên tĩnh <span class="arr">▼</span></div><div class="coll-b">
+    <div class="cue-card"><strong>Describe a quiet place you like to spend time in.</strong>Where it is • How often you go • What you do there • Why you like it</div>
+    <div class="notes-box"><span class="label">Keywords:</span>coffee shop near uni — 3x/week — code, study — quiet, cool weather, focus</div>
+    <div class="answer" style="font-size:14.5px;line-height:1.9;">
+      <strong>I'd like to talk about</strong> a small coffee shop near my university. It's on a quiet street, five minutes' walk from campus. I go about three times a week.<br><br>
+      I usually bring my laptop and work on programming assignments or read tech articles. The shop has good Wi-Fi and comfortable chairs, perfect for studying.<br><br>
+      I like it because it's quiet and the cool Da Lat weather makes sitting by the window with coffee while coding very comfortable. It helps me concentrate much better than studying at home.
+    </div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">👥 4. Nơi đông người <span class="arr">▼</span></div><div class="coll-b">
+    <div class="cue-card"><strong>Describe a place you went to that was full of people.</strong>Where it was • Why you went • What it was like • How you felt</div>
+    <div class="answer" style="font-size:14.5px;line-height:1.9;">
+      <strong>I'm going to tell you about</strong> the Da Lat night market. I went last month with classmates for street food. It was packed — both tourists and locals.<br><br>
+      There were food stalls everywhere selling grilled corn, bánh tráng nướng (a type of Vietnamese rice paper pizza), and hot soy milk. The atmosphere was lively with bright lights and music.<br><br>
+      I felt a mix of excitement and discomfort — fun to see different foods, but tiring squeezing through the crowd. Despite this, the food was delicious and I enjoyed the experience.
+    </div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">🎁 5. Món quà ý nghĩa <span class="arr">▼</span></div><div class="coll-b">
+    <div class="cue-card"><strong>Describe a gift you received that was very meaningful.</strong>What it was • Who gave it • When you received it • Why it was meaningful</div>
+    <div class="answer" style="font-size:14.5px;line-height:1.9;">
+      <strong>The one I'd like to tell you about is</strong> a laptop my parents gave me when I started university, about three years ago. It was expensive for my family — they saved for a long time.<br><br>
+      As a software engineering student, I use it every day for programming and assignments. I literally cannot study without it.<br><br>
+      It's meaningful because it shows how much my parents support my education. Every time I open it, I feel motivated to study harder and make them proud. The best gifts come from the heart.
+    </div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">📰 6. Tin tốt <span class="arr">▼</span></div><div class="coll-b">
+    <div class="cue-card"><strong>Describe a piece of good news you received.</strong>What the news was • When/how you received it • Why it was good news</div>
+    <div class="answer" style="font-size:14.5px;line-height:1.9;">
+      <strong>I'd like to talk about</strong> passing a very difficult programming exam. I got the result through the university's online system about two weeks after the exam.<br><br>
+      I was so relieved and happy. I immediately called my parents and shared in my class group chat. Everyone congratulated me.<br><br>
+      It was important because I studied very hard and many students failed. Passing meant I was on track to graduate on time, and it gave me confidence in my abilities.
+    </div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">🎉 7. Sự kiện vui <span class="arr">▼</span></div><div class="coll-b">
+    <div class="cue-card"><strong>Describe an event you attended that made you feel happy.</strong>What it was • When/where • Who was there • Why it made you happy</div>
+    <div class="answer" style="font-size:14.5px;line-height:1.9;">
+      <strong>I'd like to talk about</strong> a technology workshop my IT club organized at Dalat University last semester. About fifty students attended, plus a guest speaker from a tech company.<br><br>
+      He shared his experience working in the IT industry and gave career advice. The best part was working in teams to build a simple app in two hours.<br><br>
+      It made me happy because I learned something practical, met people who share my interest, and it reminded me why I chose software engineering.
+    </div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">🏆 8. Cuộc thi <span class="arr">▼</span></div><div class="coll-b">
+    <div class="cue-card"><strong>Describe a competition you took part in.</strong>What it was • When/where • What you had to do • How you felt</div>
+    <div class="answer" style="font-size:14.5px;line-height:1.9;">
+      <strong>I'm going to tell you about</strong> a coding competition at Dalat University. We worked in teams of three, solving algorithm problems in three hours.<br><br>
+      I was nervous at first, but as we started working together, I felt more confident. We didn't win first place but finished in the top five.<br><br>
+      It taught me about teamwork and staying calm under pressure. Competitions push students to improve — even losing teaches valuable lessons.
+    </div>
+  </div></div>
+</div>
+
+<!-- ============ PART 3 ============ -->
+<div class="section" id="part3">
+  <h2 class="section-title">Part 3 — Discussion</h2>
+  <p class="section-subtitle">4–5 phút • 8 nhóm • Nói 4–6 câu/câu hỏi</p>
+  <div class="alert info"><strong>💡 Cấu trúc:</strong> Ý kiến → Lý do → Ví dụ → (Tùy chọn: mặt đối lập)</div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">👤 1. Inspiration <span class="arr">▼</span></div><div class="coll-b">
+    <div class="qa-block"><div class="question">What qualities do inspiring people often have?</div><div class="answer">I think they usually have passion and determination. They're hard-working and good at communicating. For example, my senior was inspiring because he was patient and willing to share knowledge.</div></div>
+    <div class="qa-block"><div class="question">Why do people need inspiration in life?</div><div class="answer">Inspiration helps people stay motivated and set goals. Without it, life feels boring. When I see successful developers, it motivates me to study harder.</div></div>
+    <div class="qa-block"><div class="question">Are famous people always good role models?</div><div class="answer">Not necessarily. Some promote unhealthy lifestyles. Ordinary people like good teachers or parents can be better role models because their actions are more genuine.</div></div>
+    <div class="qa-block"><div class="question">How can teachers inspire students?</div><div class="answer">By showing passion for their subject, making lessons interesting, and encouraging students to try without fear of mistakes. The best teachers relate lessons to real life.</div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">😂 2. Humor <span class="arr">▼</span></div><div class="coll-b">
+    <div class="qa-block"><div class="question">Is humor important in the workplace?</div><div class="answer">Yes, it reduces stress and creates a friendly environment. People who laugh together work better as a team. But it's important to know when jokes are appropriate.</div></div>
+    <div class="qa-block"><div class="question">Do people in your country enjoy comedy shows?</div><div class="answer">Yes, comedy is very popular in Vietnam. Shows like "Táo Quân" during Tet are watched by millions. Young people also watch comedy on YouTube and TikTok.</div></div>
+    <div class="qa-block"><div class="question">Can humor help in serious situations?</div><div class="answer">Sometimes, if used carefully. A little humor can relax people during stressful times. But joking about very serious topics can be offensive.</div></div>
+    <div class="qa-block"><div class="question">How does humor differ across cultures?</div><div class="answer">What's funny in Vietnam might not be funny elsewhere. Vietnamese enjoy wordplay based on our language. Cultural background and social norms shape humor differently.</div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">🌿 3. Quiet Places <span class="arr">▼</span></div><div class="coll-b">
+    <div class="qa-block"><div class="question">Why is it important to have quiet places in cities?</div><div class="answer">People need somewhere to relax and escape noise. Parks, libraries, and quiet cafés give people a chance to recharge their energy and think clearly.</div></div>
+    <div class="qa-block"><div class="question">How does noise affect people's health?</div><div class="answer">It can cause sleep problems, headaches, and stress. Long-term loud noise can damage hearing. This is especially a problem in big cities with constant traffic.</div></div>
+    <div class="qa-block"><div class="question">Are people today more stressed than in the past?</div><div class="answer">I would imagine so. Modern life is fast-paced with pressure from work, study, and social media. Technology made life easier but also increased stress.</div></div>
+    <div class="qa-block"><div class="question">Do young people prefer noisy places?</div><div class="answer">It depends. Many enjoy clubs and concerts for fun, but most also need quiet places to study. As a student, I actually prefer quiet environments most of the time.</div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">👥 4. Crowded Places <span class="arr">▼</span></div><div class="coll-b">
+    <div class="qa-block"><div class="question">Why do people like crowded places like festivals?</div><div class="answer">The atmosphere and energy. Being surrounded by people who share the same interest creates community and excitement. A concert crowd makes the experience much more memorable.</div></div>
+    <div class="qa-block"><div class="question">Are crowded places always enjoyable?</div><div class="answer">Not always. Long queues, noise, and difficulty moving can be uncomfortable. Safety can be a concern too. It depends on the situation.</div></div>
+    <div class="qa-block"><div class="question">What are the disadvantages of living in a crowded city?</div><div class="answer">Traffic congestion, air pollution, higher costs, and more stress. On the other hand, crowded cities offer more jobs and services.</div></div>
+    <div class="qa-block"><div class="question">How can cities manage large crowds better?</div><div class="answer">Better public transport, technology like crowd-level apps, and organizing events across different locations to spread out crowds.</div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">🎁 5. Gifts <span class="arr">▼</span></div><div class="coll-b">
+    <div class="qa-block"><div class="question">Why do people give gifts?</div><div class="answer">To show love, appreciation, and respect. In Vietnamese culture, gifts maintain good relationships, especially during Tet and weddings.</div></div>
+    <div class="qa-block"><div class="question">What makes a gift special?</div><div class="answer">The thought behind it, not the price. A gift that shows the giver understands your needs is much more meaningful than something expensive chosen randomly.</div></div>
+    <div class="qa-block"><div class="question">Are handmade gifts better than store-bought ones?</div><div class="answer">In many ways, yes — they show time and effort. But sometimes store-bought items are more practical. What matters most is the intention.</div></div>
+    <div class="qa-block"><div class="question">Do children understand the value of gifts?</div><div class="answer">Young children probably don't fully understand the meaning. But as they grow older, they appreciate the thought behind gifts. Parents can help by teaching gratitude.</div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">📰 6. Good News <span class="arr">▼</span></div><div class="coll-b">
+    <div class="qa-block"><div class="question">How do people usually share good news in your country?</div><div class="answer">Many call family first because family is important in Vietnam. Young people share on Facebook or Zalo. Some prefer telling friends in person.</div></div>
+    <div class="qa-block"><div class="question">Is it better to hear good news in person or through social media?</div><div class="answer">In person is better — you can share the moment together. But social media is convenient for sharing with many people at once.</div></div>
+    <div class="qa-block"><div class="question">Why do people like to share good news?</div><div class="answer">It makes them happier when others celebrate with them. Sharing creates positive atmosphere and strengthens relationships.</div></div>
+    <div class="qa-block"><div class="question">Can good news ever make others feel bad?</div><div class="answer">Unfortunately, yes. If someone is struggling, hearing about another's success might make them jealous or sad. So it's important to be sensitive about timing.</div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">🎉 7. Events <span class="arr">▼</span></div><div class="coll-b">
+    <div class="qa-block"><div class="question">Why do people like attending events?</div><div class="answer">Events provide a break from routine and a chance to have fun. In Vietnam, events like Tet bring families and communities together.</div></div>
+    <div class="qa-block"><div class="question">Are family events more meaningful than public events?</div><div class="answer">Family events are more personally meaningful. But public events connect people to their culture. Both have value.</div></div>
+    <div class="qa-block"><div class="question">What role does tradition play in celebrations?</div><div class="answer">Very important, especially in Vietnam. During Tet, cleaning houses, cooking special food, and visiting relatives — these traditions make celebrations meaningful.</div></div>
+    <div class="qa-block"><div class="question">How has the way people celebrate changed recently?</div><div class="answer">Technology changed a lot — sharing on social media, virtual events since the pandemic. But the core — being with people you care about — hasn't changed.</div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">🏆 8. Competition <span class="arr">▼</span></div><div class="coll-b">
+    <div class="qa-block"><div class="question">Is competition good for people?</div><div class="answer">Healthy competition motivates people to improve. But too much causes stress. There needs to be a balance.</div></div>
+    <div class="qa-block"><div class="question">Are children under too much pressure to compete?</div><div class="answer">In Vietnam, yes. Parents want children to be the best, which can be overwhelming. Children also need time to play and enjoy childhood.</div></div>
+    <div class="qa-block"><div class="question">What are the benefits of competitions?</div><div class="answer">Problem-solving, time management, teamwork, and confidence. Even losing teaches valuable lessons — I learned this from my coding competition.</div></div>
+    <div class="qa-block"><div class="question">How can competitions build teamwork?</div><div class="answer">Team members learn to communicate, share ideas, and value different skills. Competition pressure forces teams to work efficiently — skills useful in the workplace.</div></div>
+  </div></div>
+</div>
+
+<!-- ============ PHRASES ============ -->
+<div class="section" id="phrases">
+  <h2 class="section-title">Cụm từ hay cho Part 3</h2>
+  <p class="section-subtitle">Học 2–3 câu mỗi nhóm — "chém gió" tự tin hơn</p>
+  <div class="alert success"><strong>✅ Mẹo:</strong> Chọn 2–3 cụm BẠN TỰ TIN NHẤT mỗi nhóm. Không cần tất cả!</div>
+
+  <div class="coll open" onclick="tog(this)"><div class="coll-h">🔄 So sánh & Đối chiếu <span class="arr">▼</span></div><div class="coll-b">
+    <div class="phrase-box" style="background:var(--blue-light);">📌<div><strong>On the one hand ... On the other hand ...</strong><br><span>"On the one hand, cities have more jobs. On the other hand, living costs are higher."</span></div></div>
+    <div class="phrase-box" style="background:var(--blue-light);">📌<div><strong>In contrast to ...</strong><br><span>"In contrast to big cities, Da Lat is quiet and peaceful."</span></div></div>
+    <div class="phrase-box" style="background:var(--blue-light);">📌<div><strong>Back then ... whereas nowadays ...</strong><br><span>"Back then, people went to markets, whereas nowadays most shop online."</span></div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">🔮 Dự đoán & Suy đoán <span class="arr">▼</span></div><div class="coll-b">
+    <div class="phrase-box" style="background:var(--green-light);">📌<div><strong>I would imagine that ...</strong><br><span>"I would imagine that technology will change education a lot."</span></div></div>
+    <div class="phrase-box" style="background:var(--green-light);">📌<div><strong>I suppose it could be ...</strong><br><span>"I suppose it could be difficult for older people to adapt."</span></div></div>
+    <div class="phrase-box" style="background:var(--green-light);">📌<div><strong>It's extremely unlikely that ...</strong><br><span>"It's extremely unlikely that this tradition will disappear."</span></div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">🔍 Phân tích <span class="arr">▼</span></div><div class="coll-b">
+    <div class="phrase-box" style="background:var(--orange-light);">📌<div><strong>The first thing I would say is that ...</strong><br><span>"The first thing I would say is that education is very important."</span></div></div>
+    <div class="phrase-box" style="background:var(--orange-light);">📌<div><strong>Let's take ... as an example</strong><br><span>"Let's take Vietnam as an example. Many young people prefer cities."</span></div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">💭 Đưa ra ý kiến <span class="arr">▼</span></div><div class="coll-b">
+    <div class="phrase-box" style="background:var(--purple-light);">📌<div><strong>As far as I'm concerned ...</strong><br><span>"As far as I'm concerned, competition is healthy when done properly."</span></div></div>
+    <div class="phrase-box" style="background:var(--purple-light);">📌<div><strong>I really do believe that ...</strong><br><span>"I really do believe that technology has improved our lives."</span></div></div>
+    <div class="phrase-box" style="background:var(--purple-light);">📌<div><strong>I'm afraid I don't agree that ...</strong><br><span>"I'm afraid I don't agree that famous people are always good role models."</span></div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">💪 Giải thích & Lý do <span class="arr">▼</span></div><div class="coll-b">
+    <div class="phrase-box" style="background:var(--teal-light);">📌<div><strong>Probably the main reason is ...</strong><br><span>"Probably the main reason is that people want better quality of life."</span></div></div>
+    <div class="phrase-box" style="background:var(--teal-light);">📌<div><strong>I'm not sure, but from my own observation, I'd say that ...</strong><br><span>Câu hay — thể hiện sự khiêm tốn nhưng vẫn đưa ý kiến!</span></div></div>
+    <div class="phrase-box" style="background:var(--teal-light);">📌<div><strong>It's hard to say, but if I were to, I'd say that ... because ...</strong><br><span>"It's hard to say, but I'd say that tradition still matters because..."</span></div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">📎 Ví dụ <span class="arr">▼</span></div><div class="coll-b">
+    <div class="phrase-box" style="background:#fff3cd;">📌<div><strong>For example / For instance, ...</strong><br><span>Câu phổ biến nhất.</span></div></div>
+    <div class="phrase-box" style="background:#fff3cd;">📌<div><strong>Such as ...</strong><br><span>"...activities such as coding and playing games."</span></div></div>
+    <div class="phrase-box" style="background:#fff3cd;">📌<div><strong>An example of [noun] is ...</strong><br><span>"An example of this is the night market in Da Lat."</span></div></div>
+    <div class="phrase-box" style="background:#fff3cd;">📌<div><strong>It's a bit like ...</strong><br><span>"It's a bit like comparing apples and oranges." — So sánh vui!</span></div></div>
+  </div></div>
+
+  <div class="coll" onclick="tog(this)"><div class="coll-h">⚖️ Lợi ích & Bất lợi <span class="arr">▼</span></div><div class="coll-b">
+    <div class="phrase-box" style="background:var(--accent-light);">📌<div><strong>There are two sides to this issue...</strong><br><span>"There are two sides. On one hand... On the other hand..."</span></div></div>
+    <div class="phrase-box" style="background:var(--accent-light);">📌<div><strong>The positive side ... but the darker side is that ...</strong><br><span>Câu rất ấn tượng cho Band 5.0+!</span></div></div>
+    <div class="phrase-box" style="background:var(--accent-light);">📌<div><strong>While many point out that ..., I think ...</strong><br><span>"While many say cities are better, I think small towns have advantages."</span></div></div>
+  </div></div>
+</div>
+
+<!-- ============ STRATEGIES ============ -->
+<div class="section" id="strategies">
+  <h2 class="section-title">Chiến lược & Mẹo</h2>
+  <p class="section-subtitle">6 chiến lược cốt lõi + Tips + Dạng câu hỏi</p>
+
+  <div class="card">
+    <div class="card-header"><div class="card-icon red">⚡</div><h3>6 Chiến lược cốt lõi</h3></div>
+    <div class="tip-grid">
+      <div class="tip-card"><h4>😌 Remain Calm</h4><p>Giữ bình tĩnh. Hít thở sâu.</p></div>
+      <div class="tip-card"><h4>🧠 Know What's Coming</h4><p>Bạn đã biết cấu trúc 3 parts.</p></div>
+      <div class="tip-card"><h4>❓ Just Answer!</h4><p>Where → địa điểm. Why → lý do.</p></div>
+      <div class="tip-card"><h4>🤐 Lips Are Sealed</h4><p>GK không được giúp hay gợi ý.</p></div>
+      <div class="tip-card"><h4>🤔 Answer "WHY?"</h4><p>Luôn thêm "because..." sau Yes/No.</p></div>
+      <div class="tip-card"><h4>🔑 Key Phrases</h4><p>Dùng 5–8 cụm từ tự nhiên.</p></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><div class="card-icon green">📝</div><h3>IELTS Tips</h3></div>
+    <div style="display:flex;flex-direction:column;gap:8px;font-size:14px;">
+      <div class="phrase-box" style="background:#fef9e7;">📚<div><strong>KHÔNG học thuộc câu trả lời</strong><br><span>GK nhận ra ngay. Học từ vựng + cấu trúc, nói tự nhiên.</span></div></div>
+      <div class="phrase-box" style="background:#eafaf1;">🌐<div><strong>Giải thích từ tiếng Việt</strong><br><span>"Bánh tráng nướng — a Vietnamese pizza made from rice paper."</span></div></div>
+      <div class="phrase-box" style="background:#ebf5fb;">❓<div><strong>Hỏi lại GK ở Part 3</strong><br><span>"Could you repeat that, please?"</span></div></div>
+      <div class="phrase-box" style="background:#f5eef8;">⏱️<div><strong>Luyện với đồng hồ</strong><br><span>Part 2: 1' ghi chú + 2' nói.</span></div></div>
+      <div class="phrase-box" style="background:#fdecea;">🎯<div><strong>Bám sát chủ đề</strong><br><span>Hỏi hometown → nói hometown.</span></div></div>
+      <div class="phrase-box" style="background:#fff3cd;">💬<div><strong>Part 2: Kể chuyện</strong><br><span>"Nói như đang kể chuyện" — cô dặn thế!</span></div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><div class="card-icon orange">🎯</div><h3>Nhận biết dạng câu hỏi</h3></div>
+    <div class="q-grid">
+      <div class="q-item"><span class="tag what">WHAT</span><div>CÁI GÌ — "What do you study?"</div></div>
+      <div class="q-item"><span class="tag where">WHERE</span><div>Ở ĐÂU — "Where do you study?"</div></div>
+      <div class="q-item"><span class="tag how">HOW</span><div>NHƯ THẾ NÀO — "How do you travel?"</div></div>
+      <div class="q-item"><span class="tag how">HOW OFTEN</span><div>TẦN SUẤT — "How often do you cook?"</div></div>
+      <div class="q-item"><span class="tag how">HOW LONG</span><div>BAO LÂU — "How long have you lived there?"</div></div>
+      <div class="q-item"><span class="tag do">DO YOU</span><div>CÓ/KHÔNG + giải thích</div></div>
+      <div class="q-item"><span class="tag would">WOULD YOU</span><div>LỰA CHỌN — "Would you prefer...?"</div></div>
+      <div class="q-item"><span class="tag why">WHY</span><div>LÝ DO — "Why do you think...?"</div></div>
+      <div class="q-item"><span class="tag do">DID YOU</span><div>QUÁ KHỨ — "Did you...as a child?"</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ LISTENING ============ -->
+<div class="section" id="listening">
+  <h2 class="section-title">Nghe & Hiểu câu hỏi</h2>
+  <p class="section-subtitle">Giải quyết vấn đề không nghe kịp giám khảo</p>
+
+  <div class="alert warning"><strong>⚠️ Nguyên nhân:</strong> (1) Chưa quen phát âm nối — "What do you" → "Whadda you". (2) Chưa thuộc mẫu câu hỏi. (3) Lo lắng giảm khả năng nghe.</div>
+
+  <div class="card">
+    <div class="card-header"><div class="card-icon green">🛠️</div><h3>4 Bước khắc phục</h3></div>
+    <div class="fix-step"><div class="fix-num">1</div><div class="fix-content"><h4>Học thuộc Question Words</h4><p>Bắt TỪ ĐẦU TIÊN → biết cần trả lời gì. <strong>What</strong>=CÁI GÌ | <strong>Where</strong>=Ở ĐÂU | <strong>When</strong>=KHI NÀO | <strong>Why</strong>=TẠI SAO | <strong>How</strong>=CÁCH NÀO | <strong>Do you</strong>=CÓ/KHÔNG</p></div></div>
+    <div class="fix-step"><div class="fix-num">2</div><div class="fix-content"><h4>Nghe 15 phút/ngày</h4><p>YouTube "IELTS Speaking mock test". Lần 1 không sub → Lần 2 có sub → Lần 3 không sub. Kênh: IELTS Liz, E2 IELTS.</p></div></div>
+    <div class="fix-step"><div class="fix-num">3</div><div class="fix-content"><h4>"Câu cứu mạng"</h4><p>✅ "Sorry, could you repeat that?"<br>✅ "Sorry, I didn't quite catch that."<br>✅ "Do you mean...?"</p></div></div>
+    <div class="fix-step"><div class="fix-num">4</div><div class="fix-content"><h4>Tập phản xạ</h4><p>Bạn đọc câu hỏi → trả lời ngay. Ghi âm, nghe lại. Hoặc luyện với Claude!</p></div></div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><div class="card-icon blue">🧩</div><h3>Bài tập nhận diện</h3></div>
+    <div class="q-grid">
+      <div class="q-item">🎧<div>"<strong>What</strong> do you <strong>study</strong>?" → WHAT + STUDY → Nói MÔN HỌC</div></div>
+      <div class="q-item">🎧<div>"<strong>How</strong> do you <strong>travel</strong>?" → HOW + TRAVEL → Nói PHƯƠNG TIỆN</div></div>
+      <div class="q-item">🎧<div>"<strong>Do you</strong> enjoy <strong>cooking</strong>?" → DO YOU → CÓ/KHÔNG + lý do</div></div>
+      <div class="q-item">🎧<div>"<strong>Have you ever</strong> had a <strong>pet</strong>?" → HAVE YOU EVER → Kể kinh nghiệm</div></div>
+      <div class="q-item">🎧<div>"<strong>Would you prefer</strong> ... <strong>bigger or smaller</strong>?" → PREFER → CHỌN 1 + TẠI SAO</div></div>
+    </div>
+    <div style="margin-top:14px;padding:14px;background:var(--accent-light);border-radius:8px;font-size:14px;">
+      <strong>🔑 Quy tắc vàng:</strong> Chỉ nghe được MỘT từ → trả lời dựa trên từ đó. Lệch một chút vẫn tốt hơn im lặng!
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header"><div class="card-icon purple">📅</div><h3>Lịch luyện 2 tuần</h3></div>
+    <div style="font-size:14px;line-height:1.9;">
+      <strong style="color:var(--blue)">Tuần 1 — Xây nền:</strong><br>
+      Ngày 1–2: Học cụm từ hay + linking words<br>
+      Ngày 3–4: Part 1 — tự hỏi-đáp 10 topics, ghi âm<br>
+      Ngày 5–6: Part 2 — bấm giờ 1'+2' cho 4 cue cards đầu<br>
+      Ngày 7: Ôn lại + nghỉ ngơi<br><br>
+      <strong style="color:var(--green)">Tuần 2 — Nâng cao:</strong><br>
+      Ngày 8–9: Part 2 — 4 cue cards còn lại<br>
+      Ngày 10–11: Part 3 — tập trả lời 4–6 câu<br>
+      Ngày 12: Luyện nghe câu hỏi YouTube<br>
+      Ngày 13: Mock test Part 1+2+3<br>
+      Ngày 14: Ôn nhẹ + tâm lý thoải mái
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div style="text-align:center;padding:30px 20px;color:var(--muted);font-size:12px;border-top:1px solid var(--border);margin-top:30px;">
+  IELTS Speaking Complete Guide — Tabi | ĐH Đà Lạt<br>
+  10 Topics • 8 Cue Cards • 32 Câu Part 3 • Cụm từ • Chiến lược • Nghe hiểu 🎯
+</div>
+
+<script>
+function show(id){document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));document.getElementById(id).classList.add('active');event.target.classList.add('active');window.scrollTo({top:200,behavior:'smooth'})}
+function tog(el){el.classList.toggle('open')}
+</script>
+</body>
+</html>
