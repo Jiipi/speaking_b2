@@ -549,7 +549,7 @@ body{font-family:'Source Sans 3',sans-serif;background:var(--bg);color:var(--tex
 
 <script>
 function show(id){document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));document.getElementById(id).classList.add('active');event.target.classList.add('active');window.scrollTo({top:200,behavior:'smooth'})}
-function tog(el){el.classList.toggle('open')}
+function tog(el,e){e=e||window.event;if(e&&!e.target.closest('.coll-h'))return;el.classList.toggle('open')}
 </script>
 </body>
 </html>
